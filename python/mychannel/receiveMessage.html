@@ -13,7 +13,9 @@
       };
       
       onMessage = function(m) {
-          alert('Message received: ' + m.data);
+          //alert('Message received: ' + m.data);
+          var div = document.getElementById('msg')
+          div.innerHTML = m.data
       }
       
       openChannel = function() {
